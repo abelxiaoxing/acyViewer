@@ -16,26 +16,44 @@ acyViewer 是一个专为 [acy.moe](https://www.acy.moe) 网站API设计的图�
 - **键盘快捷键**：支持多种键盘快捷键操作，提高使用效率
 
 ## 系统要求
+### python版
++ 环境依赖
+    + Python 3.6+
+    + PyQt5
+    + requests
++ 安装方法
+    1. 确保已安装Python 3.6或更高版本
+    2. 安装所需依赖：
 
-- Python 3.6+
-- PyQt5
-- requests
+    ```bash
+    pip install PyQt5 requests
+    ```
+
+    3. 下载acyViewer.py文件
+    4. 运行应用程序：
+
+    ```bash
+    python acyViewer.py
+    ```
+### c++版
++ 环境依赖
+    + Qt5
++ 安装方法
+    1. 确保已安装Qt5
+    2. 下载acyViewer-cpp文件夹
+    3. 进入acyViewer-cpp文件夹，使用cmake生成项目文件，编译并运行：
+
+    ```bash
+    cmake -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=C:\Qt\6.9.1\mingw_64 ..
+    # C:\Qt\6.9.1\mingw_64 ..改成你自己的QT路径
+    mingw32-make #编译
+    windeployqt.exe ./acyViewer.exe #补全依赖
+    ./acyViewer.exe #运行
+    ```
 
 ## 安装方法
 
-1. 确保已安装Python 3.6或更高版本
-2. 安装所需依赖：
 
-```bash
-pip install PyQt5 requests
-```
-
-3. 下载acyViewer.py文件
-4. 运行应用程序：
-
-```bash
-python acyViewer.py
-```
 
 ## 使用说明
 
